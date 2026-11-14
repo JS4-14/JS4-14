@@ -1,21 +1,17 @@
-### Hey, I'm Johaan 👋
+Johaan Shiju — BSc Cybersecurity, Aston University
+Looking for a 2027/28 cybersecurity placement. Still deciding blue vs. red — public work so far is detection/SOC-leaning, actively testing offensive security against it.
 
-I'm a Cybersecurity student at **Aston University** focused on detection engineering and SOC operations—currently looking for **SOC Analyst, Detection Engineering, or SecOps placement** opportunities.
+#### Pinned work
+- **Sigma Detection Rulepack** — Sigma rules for T1003.001 (LSASS) and T1218.005 (mshta), converted to Splunk SPL, with two documented silent Sentinel/KQL conversion failures found by hand-tracing real Sysmon telemetry through the rule logic.
+- **SOC Investigation Repository** — Four written investigations (phishing, malware, unusual login, PowerShell) with MITRE ATT&CK-justified IOCs, containment calls, and post-incident reflections.
+- **Home SOC Lab** *(in progress)* — 3-VM AD lab (VirtualBox: Windows Server DC, Windows 11 client, Ubuntu attacker) with Sysmon telemetry. Domain live, Kerberoasting ticket captured; next step is turning it into a Sigma detection.
+- **OverTheWire Bandit** — Linux/Bash/SSH/privesc, write-ups per level.
+- **Aston × Warwick CTF** — Team event, 3rd place overall. Cryptography, file/metadata analysis, steganography.
 
-#### What I'm Working On
-- **Home SOC Lab:** Building and testing detections in a Windows/Sysmon/VirtualBox environment—writing Sigma rules, simulating attack techniques, and documenting predicted vs. actual telemetry coverage gaps.
-- **Security Consulting:** Working with a UK charity through Aston's Impact Consulting programme on security control mapping and detection & response workflows.
-- **Certifications:** Studying for the **Microsoft SC-200** (Security Operations Analyst).
-- **Outside of Security:** Keeping up with PC hardware, smartphones, and new AI tooling.
+#### Currently building
+**Home SOC Lab** — predicting expected telemetry, executing the technique, investigating manually, writing the Sigma rule, scripting part of the investigation, then publishing it. Working through the Kerberoasting detection stage now.
 
-#### Languages & Tools
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+#### Tools
+![Sigma](https://img.shields.io/badge/Sigma-E4405F?style=for-the-badge) ![Sysmon](https://img.shields.io/badge/Sysmon-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-C8102E?style=for-the-badge) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johaanshiju/)
-
----
-
-[![Johaan's GitHub stats](https://github-readme-stats.vercel.app/api?username=JS4-14&count_private=true&show_icons=true&theme=radical&hide_rank=false)](https://github.com/anuraghazra/github-readme-stats)
