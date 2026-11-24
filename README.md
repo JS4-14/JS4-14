@@ -1,36 +1,41 @@
-[![Johaan Shiju: BSc Cybersecurity student at Aston University, seeking a 2027/28 UK placement. SOC, detection engineering, DFIR.](assets/banner.svg)](https://www.linkedin.com/in/johaanshiju/)
+<p align="center">
+  <img src="assets/banner.svg" alt="Johaan Shiju, BSc Cybersecurity at Aston University. Seeking a 2027/28 placement." width="100%">
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johaanshiju/)
+I'm a second-year BSc Cybersecurity student at Aston University looking for a 2027/28 placement. My public work so far leans towards detection and SOC investigation. I'm testing offensive security against it to see which side I'm actually better at.
 
-## Pinned Work
+<p>
+  <img src="https://img.shields.io/badge/Sigma-1F2B44?style=flat-square" alt="Sigma">
+  <img src="https://img.shields.io/badge/Sysmon-1F2B44?style=flat-square" alt="Sysmon">
+  <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-1F2B44?style=flat-square" alt="MITRE ATT&CK">
+  <img src="https://img.shields.io/badge/Splunk%20SPL-1F2B44?style=flat-square" alt="Splunk SPL">
+  <img src="https://img.shields.io/badge/Sentinel%20KQL-1F2B44?style=flat-square" alt="Sentinel KQL">
+  <img src="https://img.shields.io/badge/Linux-1F2B44?style=flat-square" alt="Linux">
+  <img src="https://img.shields.io/badge/Python-1F2B44?style=flat-square" alt="Python">
+</p>
 
-| Project | Status | What it proves | Stack |
-|---|---|---|---|
-| [Sigma Detection Rulepack](https://github.com/JS4-14/Cybersecurity-Portfolio/tree/main/sigma-rules-cross-platform) | Closed - both rules validated end-to-end on real captured telemetry, cross-platform (KQL + SPL) | Found and documented two real SIEM-conversion failure modes, not just "wrote a rule" | Sigma, Sysmon, KQL, SPL |
-| [Home SOC Lab](https://github.com/JS4-14/Cybersecurity-Portfolio) | In progress - live AD domain up, Kerberoasting hash extraction underway | Full attack → detect loop: build the infra, run the attack, write the detection | VirtualBox, Windows Server AD, Sysmon, Impacket |
-| [SOC Investigation Repository](https://github.com/JS4-14/Cybersecurity-Portfolio/tree/main/SOC-Portfolio) | Complete - 4 investigations | MITRE-mapped reasoning and containment calls, not just an IOC list | MITRE ATT&CK, Sysmon |
-| [Aston × Warwick CTF](https://github.com/JS4-14/Cybersecurity-Portfolio/tree/main/aston-warwick-ctf) | 3rd place, team | Performs under competition pressure - crypto, forensics, stego | - |
-| OverTheWire Bandit | Complete | Linux/bash/SSH fundamentals | Linux, Bash |
+## Selected work
 
-## Currently Building
+| Work | What it shows | Stack |
+| --- | --- | --- |
+| [**Sigma Detection Rulepack**](https://github.com/JS4-14/Cybersecurity-Portfolio) | Rules for LSASS access (T1003.001) and mshta (T1218.005), converted to Splunk SPL. Two silent Sentinel/KQL conversion failures, found by hand-tracing real Sysmon events through the rule logic. | Sigma, Sysmon, SPL, KQL |
+| [**SOC Investigation Repository**](https://github.com/JS4-14/Cybersecurity-Portfolio) | Four written investigations (phishing, malware, unusual login, PowerShell). IOCs mapped to ATT&CK, containment decisions, post-incident reflections. | ATT&CK, Windows logs |
+| [**Home SOC Lab**](https://github.com/JS4-14/Cybersecurity-Portfolio) (in progress) | Three-VM Active Directory lab with Sysmon telemetry. Domain is live and a Kerberoasting ticket has been captured. Next: turn it into a detection. | VirtualBox, Windows Server, Sysmon |
+| [**OverTheWire Bandit**](https://github.com/JS4-14/Cybersecurity-Portfolio) | Linux, Bash, SSH and privilege escalation, with a write-up per level. | Linux, Bash |
+| **Aston x Warwick CTF** | Team event, 3rd place overall. Cryptography, file and metadata analysis, steganography. | CTF |
 
-Kerberoasting live-AD detection. Domain's up, SPN-registered target account created, first live ticket pulled (RC4, standing out against AES elsewhere in the session). Next: extract the hash as a low-privilege user, capture the request in Sysmon/Wireshark, write the Sigma rule for the downgrade signal, publish.
+## How I work in the lab
 
-## Lab Architecture
+Every lab scenario follows the same loop:
 
 ```
-┌──────────────────────┐   Kerberos (88/389/445)   ┌────────────────────────┐
-│  Ubuntu - attacker    │ ─────────────────────────▶│  Windows Server - DC    │
-│  Impacket              │                            │  AD DS + DNS + KDC      │
-└──────────────────────┘                            │  windomain.local        │
-                                                      └───────────┬────────────┘
-                                                                  │ domain-joined
-                                                      ┌───────────▼────────────┐
-                                                      │  Win11 - client          │
-                                                      │  Sysmon, Event ID 4769   │
-                                                      └─────────────────────────┘
+predict telemetry > run the technique > investigate by hand
+                  > write the Sigma rule > script part of the investigation
+                  > publish the case study
 ```
 
-## Tools
+Right now I'm on the Kerberoasting detection stage of the Home SOC Lab.
 
-[![Sigma](https://img.shields.io/badge/Sigma-E4405F?style=for-the-badge)](#) [![Sysmon](https://img.shields.io/badge/Sysmon-0078D6?style=for-the-badge&logo=windows&logoColor=white)](#) [![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-C8102E?style=for-the-badge)](#) [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#) [![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](#) [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](#)
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/johaanshiju/)
