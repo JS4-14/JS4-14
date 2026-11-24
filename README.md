@@ -1,8 +1,4 @@
-# Johaan Shiju
-
-**BSc Cybersecurity, Aston University - hunting a 2027/28 UK security placement.**
-
-Blue-leaning generalist. Public work so far skews SOC/detection; actively running offensive security against my own detections to test that against genuine interest.
+[![Johaan Shiju: BSc Cybersecurity student at Aston University, seeking a 2027/28 UK placement. SOC, detection engineering, DFIR.](assets/banner.svg)](https://www.linkedin.com/in/johaanshiju/)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johaanshiju/)
 
