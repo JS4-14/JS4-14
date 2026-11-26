@@ -24,15 +24,6 @@ I'm a second-year BSc Cybersecurity student at Aston University looking for a 20
 | [**OverTheWire Bandit**](https://github.com/JS4-14/Cybersecurity-Portfolio) | Linux, Bash, SSH and privilege escalation, with a write-up per level. | Linux, Bash |
 | **Aston x Warwick CTF** | Team event, 3rd place overall. Cryptography, file and metadata analysis, steganography. | CTF |
 
-## How I work in the lab
-
-Every lab scenario follows the same loop:
-
-```
-predict telemetry > run the technique > investigate by hand
-                  > write the Sigma rule > script part of the investigation
-                  > publish the case study
-```
 
 Right now I'm on the Kerberoasting detection stage of the Home SOC Lab.
 
