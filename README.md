@@ -29,4 +29,4 @@ Right now I'm on the Kerberoasting detection stage of the Home SOC Lab.
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/johaanshiju/)
+[LinkedIn](https://www.linkedin.com/in/johaanshiju/) | [Gmail](Johaanshiju01@gmail.com)
